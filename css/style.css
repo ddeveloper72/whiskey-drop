@@ -3,14 +3,30 @@ body {
 }
 
 
+
 /* Containers */
-.alert-container {
-    
+.alert-container .col-xs-12 {
+    padding: 0;
+    border-radius: 0;
+}
+
+.site-wide-alert {
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #f9d208;
+    border-color: #f9d208;
 }
 
 .callout-container {
     height: 100vh;
-    background: url(../images/whiskey-background.jpg) no-repeat center center fixed; 
+    background: url("../images/whiskey-background.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,6 +35,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
 }
 
 .quotes-container {
@@ -42,6 +59,65 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Container Wraper */
+.container-wraper {
+    
+}
+
+.container-wraper--one {
+    background-color: #ffeac4;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    transition-duration: .4s;
+}
+
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    transition-duration: .4s;
+}
+
 /* Jumbotron */
 .jumbotron {
     background-color: transparent;
@@ -51,6 +127,7 @@ body {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
+    margin-top: 80px;
 }
 
 .jumbotron .lead {
@@ -66,17 +143,17 @@ body {
 
 /* Block Dividers & Block Quotes*/
 .block-divider {
-    width: 70px;
     height: 4px;
     border: 0;
+    background-color: #bd961e;
 }
 
 .block-divider--short {
         width: 45px;
 }
 
-.block-divider--whiskeyYellow {
-    background-color: #bd961e;
+.block-divider--long {
+    width: 70px;
 }
 
 blockquote {
@@ -89,10 +166,25 @@ blockquote {
     font-weight: bold;
     border-radius: 20px;
     width: 160px;
+    transition-duration: 0.4s;
 }
 
 .btn--whiskeyYellow {
     color: white;
+    background-color: #bd961e;
+    border-color: #bd961e;
+    transition-duration: 0.4s;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fdbaba;
+    border-color: #d49797;
+    transition-duration: 0.4s;
+}
+
+.btn-default:hover {
+    color: #333;
     background-color: #bd961e;
     border-color: #bd961e;
 }
@@ -110,4 +202,33 @@ blockquote {
     background-color: #a2811b;
     border-color: #a2811b;
     color: white;
+}
+
+/* Glyph Icons */
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Headers*/
+.page-header {
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 0;
+    
+}
+
+
+/* Table Header Row */
+th {
+    text-align: center;
 }
