@@ -81,6 +81,14 @@ body {
     
 }
 
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+}
+
+
 .navbar-default .navbar-brand {
     color: white;
     transition-duration: .4s;
